@@ -1,0 +1,13 @@
+chef: Maria Bacalhau
+receipt:
+  name: "Bola de carne"
+  ingredients:
+    - name: olive-oil
+      quantity: 1
+      optional: true
+    - name: snake-oil
+      quantity: 1
+      optional: true
+    - name: carniss
+      quantity: 2
+      optional: false

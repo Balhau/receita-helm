@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Receipt
+metadata:
+  name: {{ include "receita.fullname" . }}
+  labels:
+    {{- include "receita.labels" . | nindent 4 }}
+spec:
+  name: {{ .Values.receipt.name }}
+  ingredients: 
+  {{- range $i := .Values.receipt.ingredients }}
+    - name: {{$i.name}}
+      optional: {{$i.optional}}
+      quantity: {{$i.quantity}}
+  {{- end}}

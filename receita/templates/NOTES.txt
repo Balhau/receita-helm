@@ -1,0 +1,1 @@
+This is a receipt how to make {{ .Values.receipt.name }}
