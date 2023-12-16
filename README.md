@@ -27,3 +27,8 @@ To create a tar.gz file with the chart, from the root just run
 ```sh
 helm package receita
 ```
+
+
+## Resources
+
+[Installing Helm](https://helm.sh/docs/intro/install/)
