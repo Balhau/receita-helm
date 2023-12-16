@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: hell-kitchen/v1
 kind: Receipt
 metadata:
   name: {{ include "receita.fullname" . }}
@@ -12,3 +12,11 @@ spec:
       optional: {{$i.optional}}
       quantity: {{$i.quantity}}
   {{- end}}
+  proceedings:
+    {{- range $p := .Values.receipt.proceedings }}
+    - name: {{$p.name}}
+      description: {{$p.description}}
+      duration: {{$p.duration}}
+      timeUnit: {{$p.timeUnit}}
+    {{- end}}
+

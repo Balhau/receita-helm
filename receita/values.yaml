@@ -11,3 +11,15 @@ receipt:
     - name: carniss
       quantity: 2
       optional: false
+    - name: onions
+      quantity: 3
+      optional: false
+  proceedings:
+    - name: Break the Carniss
+      description: The carniss needs to be choped into smaller parts to fit the oven
+      duration: 2
+      timeUnit: cibos
+    - name: Descascate the onions
+      description: The onions needs to be peeled of to avoid a very bad experience
+      duration: 3
+      timeUnit: minutes
